@@ -1,0 +1,17 @@
+/*@!Encoding:936*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+on message Msg100
+{
+  write("Light ECU reveived bsSwitch is %d . ",this.bsSwitch);
+  sysSetVariableInt(sysvar::MyNamespace::svLight,this.bsSwitch);
+}
+

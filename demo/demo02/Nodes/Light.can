@@ -1,0 +1,23 @@
+/*@!Encoding:936*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+on message Msg200
+{
+  if (this.bsSwitch == 1)
+  {
+    write("the light should be turn on.");
+  }
+   if (this.bsSwitch == 0)
+  {
+    write("the light should be turn off.");
+  }
+}
+
