@@ -1,0 +1,21 @@
+/*@!Encoding:936*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+
+
+on sysvar MyNamespace::svSwitch
+{
+  message Msg100 msg;
+  msg.bsSwitch = sysGetVariableInt(this);
+  write("this is Switch ECU is going to send %d.",msg.bsSwitch);
+  output(msg);
+}
+
